@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Alexandre de Bortoli</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="media/icon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <audio id="background-audio" loop>
+        <source src="media/audio_fundo.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <header class="header">
+        <div class="container header-content">
+            <a href="#" class="logo">Alexandre de Bortoli</a>
+            <nav class="main-nav" aria-label="Menu principal">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#experiencia">Experiência</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <button id="audio-toggle-btn" class="audio-btn" aria-label="Reproduzir ou pausar música de fundo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-music"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+            </button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section id="sobre" class="section hero">
+            <div class="container hero-content">
+                <div class="hero-image animated-element fade-in">
+                    <img src="media/perfil.webp" alt="Foto de perfil de Alexandre de Bortoli">
+                </div>
+                <div class="hero-text animated-element fade-in-up">
+                    <h2 id="welcome-message">Olá, meu nome é <br><span>Alexandre de Bortoli</span></h2>
+                    <p>
+                        Sou desenvolvedor web júnior com paixão por interfaces de usuário intuitivas e acessíveis. Minha jornada no mundo do código começou com a curiosidade de como as páginas da web ganham vida, e desde então tenho me dedicado a transformar ideias em realidade digital.
+                    </p>
+                    <a href="#contato" class="btn btn-primary">Fale Comigo</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="section">
+            <div class="container">
+                <h3>Minhas Habilidades</h3>
+                <div class="skills-grid">
+                    <article class="skill-card animated-element fade-in-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 2.5l1.5 1.5l1.5-1.5l1.5 1.5l1.5-1.5l1.5 1.5l1.5-1.5l1.5 1.5l1.5-1.5l1.5 1.5l1.5-1.5l1.5 1.5l1.5-1.5l1.5 1.5l1.5-1.5M10.5 10.5l-2 2l-2-2m4 4l-2 2l-2-2"></path></svg>
+                        <h4>HTML5 Semântico</h4>
+                        <p>Estruturo páginas para maior acessibilidade e SEO, garantindo uma base sólida para qualquer projeto.</p>
+                    </article>
+                    <article class="skill-card animated-element fade-in-up">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 12l10 10l10-10L12 2Z" fill="none" stroke-miterlimit="10"/><path d="M12 12L22 12" fill="none" stroke-miterlimit="10"/><path d="M12 2V22" fill="none" stroke-miterlimit="10"/><path d="M2 12H22" fill="none" stroke-miterlimit="10"/></svg>
+                        <h4>CSS3 Avançado</h4>
+                        <p>Domino layouts modernos com Flexbox e Grid, além de animações, transições e pré-processadores como SASS.</p>
+                    </article>
+                    <article class="skill-card animated-element fade-in-right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18H8a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h8m-4 12V6m4 4l-4 4l-4-4"/></svg>
+                        <h4>JavaScript Interativo</h4>
+                        <p>Crio funcionalidades dinâmicas para o usuário, manipulando o DOM e trabalhando com APIs simples.</p>
+                    </article>
+                    <article class="skill-card animated-element fade-in-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10c0-6-8-10-8-10s-8 4-8 10c0 6 8 10 8 10z"/></svg>
+                        <h4>Design Responsivo</h4>
+                        <p>Garanto que as páginas se adaptem a qualquer tamanho de tela, proporcionando uma ótima experiência em desktop e mobile.</p>
+                    </article>
+                </div>
+                <div class="canvas-container animated-element fade-in-up">
+                    <h4>Distribuição de Habilidades</h4>
+                    <canvas id="skillsChart" width="300" height="150" aria-label="Gráfico de habilidades mostrando a proficiência em HTML, CSS e JavaScript."></canvas>
+                </div>
+            </div>
+        </section>
+        
+        <section id="experiencia" class="section">
+            <div class="container">
+                <h3>Experiência Profissional</h3>
+                <div class="timeline animated-element fade-in">
+                    <div class="timeline-item">
+                        <h4>Estagiário de Desenvolvimento Web</h4>
+                        <p>Empresa XPTO, 2023 - 2024</p>
+                        <p>Colaborei na criação e manutenção de landing pages, utilizando HTML, CSS e JavaScript. Participei ativamente de reuniões de equipe e aprendi sobre metodologias ágeis.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Projeto Freelancer de Landing Page</h4>
+                        <p>Cliente XYZ, 2024</p>
+                        <p>Desenvolvi uma landing page completa para um cliente, do design responsivo à implementação de formulário de contato funcional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="section projects">
+            <div class="container">
+                <h3>Projetos em Destaque</h3>
+                <div class="project-grid">
+                    <div class="project-card animated-element fade-in-up">
+                        <img src="media/projeto1.webp" alt="Imagem do Projeto 1 - Landing Page de E-commerce">
+                        <div class="project-info">
+                            <h4>E-commerce Simples</h4>
+                            <p>Uma landing page moderna para um e-commerce, com carrinho de compras e efeitos visuais.</p>
+                            <a href="#" class="btn btn-secondary">Ver Código</a>
+                        </div>
+                    </div>
+                    <div class="project-card animated-element fade-in-up delay-200">
+                        <img src="media/projeto2.webp" alt="Imagem do Projeto 2 - Blog de Tecnologia">
+                        <div class="project-info">
+                            <h4>Blog de Tecnologia</h4>
+                            <p>Um blog estático e responsivo com sistema de filtro de posts por categoria.</p>
+                            <a href="#" class="btn btn-secondary">Ver Código</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section contact">
+            <div class="container">
+                <h3>Entre em Contato</h3>
+                <form id="contact-form" class="animated-element fade-in-up">
+                    <label for="input-name">Nome:</label>
+                    <input type="text" id="input-name" placeholder="Seu nome" required>
+
+                    <label for="input-email">E-mail:</label>
+                    <input type="email" id="input-email" placeholder="seu.email@exemplo.com" required>
+                    
+                    <label for="input-subject">Assunto:</label>
+                    <select id="input-subject" required>
+                        <option value="" disabled selected>Selecione um assunto</option>
+                        <option value="oportunidade">Oportunidade de Emprego</option>
+                        <option value="duvida">Dúvida sobre um Projeto</option>
+                        <option value="outros">Outros</option>
+                    </select>
+
+                    <button type="submit" id="submit-btn" class="btn btn-submit">Enviar Mensagem</button>
+                </form>
+                <div class="form-feedback animated-element fade-in-up" id="form-feedback"></div>
+                <div class="counter-display" id="visit-counter"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Alexandre de Bortoli. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="https://github.com/alexandre3536" target="_blank" aria-label="Link para o perfil do GitHub de Alexandre de Bortoli">GitHub</a>
+                <a href="https://www.linkedin.com/feed/" target="_blank" aria-label="Link para o perfil do LinkedIn de Alexandre de Bortoli">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
